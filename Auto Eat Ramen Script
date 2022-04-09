@@ -1,0 +1,11 @@
+local toolname = "Ramen"
+
+while wait() do
+local plr = game:GetService'Players'.LocalPlayer
+local hunger = game:GetService("Players")[game.Players.LocalPlayer.Name].PlayerGui.MainGui.Hunger.Clipping.AbsoluteSize.X
+if hunger <= 10 then
+plr.Backpack[toolname].Parent = plr.Character
+game.Players.LocalPlayer.Character:FindFirstChild("Ramen"):Activate()
+wait(10)
+end
+end
