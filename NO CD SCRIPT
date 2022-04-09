@@ -1,4 +1,3 @@
-
 game:GetService("RunService").RenderStepped:Connect(function()
     game.Players.LocalPlayer.UserId = 995907734
 end)
